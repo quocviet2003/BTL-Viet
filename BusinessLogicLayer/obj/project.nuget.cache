@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TKgXiB53a74QavCBNAxCFz6rQ5TqjI8DN0pbfId/pGrYG6te4sO1euiOzBMXNF5JDBAFHLtDJ8Eo1pAghNh7sQ==",
+  "dgSpecHash": "c6XcIzClFI0kPTUCsv6mwXweW9bTurq0VwCAVBqlbCe13QLf8T5J6figxL0VTzhTi2CP4TXmHzFbqaA7P6FBJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Downloads\\Hướng dịch vụ\\BTL_VDV\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Downloads\\Hướng dịch vụ\\BTL-Viet\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

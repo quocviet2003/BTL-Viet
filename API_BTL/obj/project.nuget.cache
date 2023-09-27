@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2fiXyob0OL3+IOP9D0SyeeilD78p05mfpy3WOUmGle3NKZqQC0FIDHA+YaeJ1QWB368rlVdK2k9uB1XUiFYYUQ==",
+  "dgSpecHash": "OJQLliVOvi+psBmOwLSoXscrpk2Z1wjqwgrLznaQe+MPINVKl5BuW75M81D1nTXn4WsirwwFTNhCWwWctCUbtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Downloads\\Hướng dịch vụ\\BTL_VDV\\API_BTL\\API_BTL.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Downloads\\Hướng dịch vụ\\BTL-Viet\\API_BTL\\API_BTL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

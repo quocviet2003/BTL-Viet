@@ -47,7 +47,6 @@ CREATE TABLE [dbo].[HoaDons](
 
 CREATE TABLE [dbo].[SanPhams](
 	[MaSanPham] [int] IDENTITY(1,1) NOT NULL,
-	[MaChuyenMuc] [int] NULL,
 	[TenSanPham] [nvarchar](150) NULL,
 	[AnhDaiDien] [nvarchar](350) NULL,
 	[Gia] [decimal](18, 0) NULL,
@@ -61,8 +60,6 @@ CREATE TABLE [dbo].[SanPhams](
 	[MaSanPham] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
-
-
 
 
 
@@ -309,10 +306,9 @@ AS
 
 
 
-create PROCEDURE [dbo].[sp_hoadon_create]
+alter PROCEDURE [dbo].[sp_hoadon_create]
 (@TenKH              NVARCHAR(50), 
  @Diachi          NVARCHAR(250), 
- @TrangThai         bit,  
  @list_json_chitiethoadon NVARCHAR(MAX)
 )
 AS
@@ -320,13 +316,11 @@ AS
 		DECLARE @MaHoaDon INT;
         INSERT INTO HoaDons
                 (TenKH, 
-                 Diachi, 
-                 TrangThai               
+                 Diachi           
                 )
                 VALUES
                 (@TenKH, 
-                 @Diachi, 
-                 @TrangThai
+                 @Diachi
                 );
 
 				SET @MaHoaDon = (SELECT SCOPE_IDENTITY());
@@ -348,6 +342,8 @@ AS
     END;
 
 
+alter table HoaDons
+alter column GioiTinh bit null
 
 
 create PROCEDURE [dbo].[sp_thong_ke_khach] (@page_index  INT, 
@@ -428,3 +424,13 @@ SELECT @RecordCount = COUNT(*)
                         DROP TABLE #Results2; 
         END;
     END;
+
+
+
+
+
+CREATE PROCEDURE HD_get_all
+AS
+BEGIN
+    SELECT * FROM HoaDons;
+END;
